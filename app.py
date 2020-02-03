@@ -9,10 +9,10 @@ def page_one():
 def page_two():
 	return render_template("two.html")
 
-@app.route('/text_one')
+@app.route('/text_one', methods=["POST"])
 def text_one():
 	pass
 
-@app.route('/text_twp')
+@app.route('/text_two', methods=["POST"])
 def text_two():
 	pass
